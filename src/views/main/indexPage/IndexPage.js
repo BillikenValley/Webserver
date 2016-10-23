@@ -104,12 +104,42 @@ export class IndexPage extends React.Component {
             </FormGroup>
           </form>
         </div>
-        <p>
-          <Link to="about">About</Link>
-        </p>
-        <p>
-        Blah blah blah
-        </p>
+        /* About us */
+        <div className={styles.about}>
+          <a id='formBtn' className={styles.formBtn} >
+            About US
+          </a>
+        </div>
+        <div className={styles.content}>
+          <h1>about us</h1>
+        </div>
+        /* At a glance */
+        <div className={styles.glance}>
+          <a id='formBtn' className={styles.formBtn} >
+            At a glance
+          </a>
+        </div>
+        <div className={styles.content}>
+          <h1>At a glance</h1>
+        </div>
+        /* How to help */
+        <div className={styles.how}>
+          <a id='formBtn' className={styles.formBtn} >
+            How to help
+          </a>
+        </div>
+        <div className={styles.content}>
+          <h1>How to help</h1>
+        </div>
+        /* Partners&Resources */
+        <div className={styles.partners}>
+          <a id='formBtn' className={styles.formBtn} >
+            Partners&Resources
+          </a>
+        </div>
+        <div className={styles.content}>
+          <h1>Partners&Resources</h1>
+        </div>
       </div>
       </div>
     )
