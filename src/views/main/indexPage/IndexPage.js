@@ -44,10 +44,11 @@ export class IndexPage extends React.Component {
       </div>
       <div className={styles.contentWrapper}>
         <div className={styles.front}>
-          <a id='formBtn' onClick={enableForm()} className={styles.formBtn} >
+          <a id='formBtn' href='#form' onClick={enableForm()} className={styles.formBtn} >
             Home ME!
           </a>
         </div>
+        <div id='form'></div>
         <div id='formWrapper' className={styles.formWrapper}>
           <ProgressBar striped bsStyle='info' now={now} label={`${now}%`} />
           <h1>This is a basic description of what this form is intended for (an
@@ -125,7 +126,7 @@ export class IndexPage extends React.Component {
             </FormGroup>
           </form>
         </div>
-        <div className={styles.about}>
+        <div id='about' className={styles.about}>
           <a id='formBtn' className={styles.formBtn} >
             About US
           </a>
@@ -135,7 +136,7 @@ export class IndexPage extends React.Component {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tortor ipsum, auctor in metus vitae, euismod vulputate justo. Nullam vel velit ligula. Nulla varius velit vitae risus posuere dignissim. Aliquam erat volutpat. Curabitur ut placerat purus. Proin lacinia a arcu at sollicitudin. Aenean interdum erat felis, sed vehicula turpis varius at. Vivamus fringilla ligula id iaculis lobortis. Morbi malesuada semper tristique. Nam iaculis magna scelerisque velit fringilla egestas. Integer ultrices tincidunt dolor, et luctus odio mattis vitae. Mauris ornare magna nec finibus viverra.</p>
           <p>Quisque bibendum est non libero semper mollis. Aliquam feugiat sapien non felis pellentesque, eget ultricies justo hendrerit. Morbi scelerisque in leo condimentum posuere. Maecenas non elementum ipsum, a congue erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eget accumsan nunc. Phasellus varius magna sed tristique tempus. Nullam malesuada, nibh a rhoncus ultrices, dui neque condimentum ex, sed scelerisque diam justo vel lorem. Sed congue enim velit, ut imperdiet libero egestas quis.</p>
         </div>
-        <div className={styles.glance}>
+        <div id='glance' className={styles.glance}>
           <a id='formBtn' className={styles.formBtn} >
             At a glance
           </a>
@@ -145,7 +146,7 @@ export class IndexPage extends React.Component {
           <p>Curabitur nec cursus diam. Suspendisse potenti. Fusce nec nulla risus. Praesent finibus neque vitae lacus posuere mattis. Aliquam erat volutpat. Integer sit amet finibus dui, sit amet elementum felis. Phasellus mollis metus eget purus faucibus, non cursus tellus vehicula. Pellentesque eget nulla gravida, luctus erat non, egestas lorem. Cras a molestie urna.</p>
           <p>Morbi elementum feugiat congue. In vitae ex accumsan, finibus enim eu, luctus velit. Praesent ultricies at odio vitae vestibulum. Morbi vel arcu at arcu fringilla facilisis. Duis quis porta sem, malesuada elementum tellus. Pellentesque mattis, est fermentum convallis volutpat, nulla ex suscipit magna, vel bibendum orci est quis mauris. Suspendisse eu dictum risus. Integer vitae mauris laoreet, euismod libero id, porta ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam ac viverra nulla. Proin condimentum diam vel ipsum malesuada sodales. Vestibulum nec justo purus.</p>
         </div>
-        <div className={styles.how}>
+        <div id='how' className={styles.how}>
           <a id='formBtn' className={styles.formBtn} >
             How to help
           </a>
@@ -154,7 +155,7 @@ export class IndexPage extends React.Component {
           <h1>How to help</h1>
           <p>In ullamcorper lobortis tellus ut scelerisque. Integer lobortis dolor lacus, non pretium risus eleifend sit amet. Cras vestibulum, nibh ut tincidunt sodales, metus neque semper mauris, eget viverra ex augue in nisi. Duis vestibulum neque ipsum, eget pulvinar purus scelerisque quis. Aenean odio urna, malesuada ac mollis ac, cursus in orci. Fusce pulvinar, purus ut egestas faucibus, turpis risus finibus nisi, in malesuada dolor mi nec neque. Suspendisse eleifend lectus mauris, ac hendrerit dui mollis ac. Proin urna metus, vulputate in erat sed, aliquet luctus neque. Phasellus sodales neque vel magna vehicula interdum. Aliquam id odio id arcu fermentum pellentesque pellentesque nec arcu. Donec eu pellentesque lacus. Vestibulum feugiat urna vitae mi pellentesque, at tristique velit accumsan. Nulla condimentum lorem ac egestas dapibus. Aenean et tempus massa. Sed tortor orci, placerat vel enim accumsan, tristique aliquam lorem.</p>
         </div>
-        <div className={styles.partners}>
+        <div id='partners' className={styles.partners}>
           <a id='formBtn' className={styles.formBtn} >
             Partners&Resources
           </a>
