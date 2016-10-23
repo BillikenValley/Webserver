@@ -104,6 +104,19 @@ export class IndexPage extends React.Component {
             </FormGroup>
           </form>
         </div>
+<<<<<<< HEAD
+=======
+        <div style="position: relative; width: 100%; height: 250px;">
+        <Map
+            google={this.props.google} />
+          </div>
+        <p>
+
+          <Link to="about">About</Link>
+        </p>
+
+      </div>
+>>>>>>> origin/dev
         /* About us */
         <div className={styles.about}>
           <a id='formBtn' className={styles.formBtn} >
