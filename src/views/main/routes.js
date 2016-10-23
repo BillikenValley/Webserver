@@ -8,15 +8,9 @@ export const makeMainRoutes = () => {
   return (
     <Route path="/" component={Container}>
       {/* Lazy-loading */}
-      <Route path="about" getComponent={(location, cb) => {
+      <Route path="coc" getComponent={(location, cb) => {
           require.ensure([], (require) => {
-            const mod = require('./about/About');
-            cb(null, mod.default);
-          });
-        }} />
-      <Route path="form" getComponent={(location, cb) => {
-          require.ensure([], (require) => {
-            const mod = require('./form/form');
+            const mod = require('./coc/Coc');
             cb(null, mod.default);
           });
         }} />
