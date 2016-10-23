@@ -1,6 +1,6 @@
 import React, { PropTypes as T } from 'react';
 import {Link} from 'react-router';
-
+import Map, {GoogleApiWrapper} from 'google-maps-react'
 import styles from './styles.module.css';
 import Header from 'components/Header/Header'
 import ProgressBar from 'react-bootstrap/lib/ProgressBar'
@@ -63,7 +63,7 @@ export class IndexPage extends React.Component {
               <Checkbox>male</Checkbox>
               <Checkbox>female</Checkbox>
             </FormGroup>
-			
+
             <p>If female:</p>
             <Checkbox>pregnant?</Checkbox>
             <FormControl type='textarea' placeholder='how many weeks?' />
@@ -104,6 +104,16 @@ export class IndexPage extends React.Component {
             </FormGroup>
           </form>
         </div>
+        <div style="position: relative; width: 100%; height: 250px;">
+        <Map
+            google={this.props.google} />
+          </div>
+        <p>
+
+          <Link to="about">About</Link>
+        </p>
+
+      </div>
         /* About us */
         <div className={styles.about}>
           <a id='formBtn' className={styles.formBtn} >
@@ -141,9 +151,9 @@ export class IndexPage extends React.Component {
           <h1>Partners&Resources</h1>
         </div>
       </div>
-      </div>
     )
   }
 }
-
-export default IndexPage;
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyBUiVTXXB7f7Z2CHemNJxehSaskM6B5eyQ"
+})(IndexPage);
