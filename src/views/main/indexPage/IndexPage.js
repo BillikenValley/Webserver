@@ -8,6 +8,7 @@ import FormGroup from 'react-bootstrap/lib/FormGroup'
 import FormControl from 'react-bootstrap/lib/FormControl'
 import ControlLabel from 'react-bootstrap/lib/ControlLabel'
 import Checkbox from 'react-bootstrap/lib/Checkbox'
+import Radio from 'react-bootstrap/lib/Radio'
 
 var now = 60
 
@@ -62,9 +63,45 @@ export class IndexPage extends React.Component {
               <Checkbox>male</Checkbox>
               <Checkbox>female</Checkbox>
             </FormGroup>
+			
             <p>If female:</p>
             <Checkbox>pregnant?</Checkbox>
             <FormControl type='textarea' placeholder='how many weeks?' />
+			<FormGroup>
+				<p><ControlLabel>Do you have a valid ID?</ControlLabel></	p>
+				<Radio inline>
+					Yes
+				</Radio>
+					{' '}
+				<Radio inline>
+					No
+				</Radio>
+			</FormGroup>
+			<FormGroup>
+				<p><ControlLabel>Do you have a Social Security Number?</ControlLabel></p>
+				<Radio inline>
+					Yes
+				</Radio>
+					{' '}
+				<Radio inline>
+					No
+				</Radio>
+			</FormGroup>
+			<FormGroup>
+				<p><ControlLabel>Are you sober?</ControlLabel></p>
+				<Radio inline>
+					Yes
+				</Radio>
+					{' '}
+				<Radio inline>
+					No
+				</Radio>
+			</FormGroup>
+			<FormGroup>
+              <p><ControlLabel>Have you ever been convicted of the following crimes?</ControlLabel></p>
+              <Checkbox>Sexual Assualt</Checkbox>
+              <Checkbox>Violent crimes</Checkbox>
+            </FormGroup>
           </form>
         </div>
         <p>
